@@ -20,11 +20,12 @@ while gameOver==False:
     elif r >= 4.5:
         print("Damage to poorly constructed buildings\n")
 
-    elif r >= 0.0:
+    elif r > 0.0:
         print("No destruction of buildings\n")
 
-    elif r < 0.0 and r != -99.0:
-        print("Please enter a positive number\n")
+    elif r <= 0.0 and r != -99.0:
+        print("Value must be greater than 0\n")
     
     if r == -99.0:
         gameOver=True
+    
