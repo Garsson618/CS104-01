@@ -3,6 +3,8 @@
 #s1293728
 
 x=1
+y=0
+sum=0
 numbers=[]
 
 while x<=20:
@@ -10,7 +12,10 @@ while x<=20:
     numbers.append(n)
     x=x+1
 
-sum=int(numbers[0])+int(numbers[1])+int(numbers[2])+int(numbers[3])+int(numbers[4])+int(numbers[5])+int(numbers[6])+int(numbers[7])+int(numbers[8])+int(numbers[9])+int(numbers[10])+int(numbers[11])+int(numbers[12])+int(numbers[13])+int(numbers[14])+int(numbers[15])+int(numbers[16])+int(numbers[17])+int(numbers[18])+int(numbers[19])
+while y<=19:
+    sum=int(numbers[y])+sum
+    y=y+1
+
 print("\nThe sum of the numbers you entered is: "+str(sum))
 print("The average of the numbers you entered is: "+str((float(sum)/20)))
 
