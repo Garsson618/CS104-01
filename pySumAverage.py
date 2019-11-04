@@ -17,7 +17,7 @@ while y<=19:
     y=y+1
 
 print("\nThe sum of the numbers you entered is: "+str(sum))
-print("The average of the numbers you entered is: "+str((float(sum)/20)))
+print("The average of the numbers you entered is: "+str(float(sum)/len(numbers)))
 
 
 #Build on what you did in the 'List of Names' program
